@@ -1,0 +1,689 @@
+*,
+*:after,
+*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+
+	line-height: 18px;
+	font-weight: 400px;
+	font-size: 14px;
+	color: #fff;
+
+	width: 100%;
+	max-width: 1920px;
+}
+/*Typography*/
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/*Fonts
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+transition: all .2s linear:
+
+colors: #17daa3, #fff, #576671
+*/ 
+
+/*Conteiners*/
+
+.conteiner{
+	width: 1475px;
+	margin: 0 auto;
+}
+
+
+/*Header*/
+
+header{
+   width: 100%;
+   max-width: 1920px;
+   height: 100vh;
+   max-height: 1040px; 
+   background: url('../images/images/header_bckg.jpg') center no-repeat;
+}
+
+
+.header-top{
+	color: #fff;
+	padding-top: 45px;
+
+	display: flex;
+	justify-content: space-between;
+
+	align-content: center;
+}
+
+.header-logo{
+    font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+}
+
+
+/*header-nav*/
+
+.header-nav{
+	display: flex;
+}
+
+.header-nav-item{
+	margin: 0 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	letter-spacing: 2px;        /*расстояние между буквами*/
+	transition: all .5s;
+	text-transform: uppercase;
+}
+
+.header-nav-item a{
+	transition: all .2s;
+}
+
+.header-nav-item:after{
+	content: '';
+	display: block;
+	background-color: #17daa3;
+	height: 2px;
+	width: 100%;
+	margin-top: 1px;
+
+	opacity: 0;
+	transition: all .2s ;
+}
+
+.header-nav-item a:hover{
+	color: #17daa3;
+}
+
+.header-nav-item:hover.header-nav-item:after{
+	opacity: 1;
+}
+
+
+/*header-center*/
+
+.header-center{
+	text-align: center;
+	margin: 20% 0 50% 0;
+}
+
+.header-intro{
+	line-height: 63px;
+}
+
+.header-intro-title{           /*стилизация одного слова 'Alerto'*/
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 60px;
+	opacity: .8;
+}
+
+.header-intro-title span{		
+	font-weight: 300;
+	opacity: .8;
+}
+
+.header-intro-subtitle{
+	font-weight: 300;
+	font-size: 24px;
+	margin-top: 6px;
+	margin-bottom: 45px;	
+}
+
+.learn-more a{
+	border: 2px solid #fff;
+	border-radius: 30px;
+
+	padding: 10px 50px;
+
+	transition: all .2s ;
+}
+
+.learn-more{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;	
+	font-size: 16px;
+	letter-spacing: 0.5px;
+}
+
+.learn-more a:hover{
+	background-color: #17daa3;
+}
+
+
+
+/*title-page*/
+
+
+.title-page{		/*шаблон тайтла некоторых страниц*/
+	text-align: center;
+	padding: 105px 0 100px 0;
+}
+
+.title-page-title p{
+	color: #576671;
+	font-size: 60px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	margin: 0;
+}
+
+.title-page-hr{
+	/*position: relative;*/
+	/*left: calc(50% - 15px);*/
+
+	border: 1px solid#17daa3;
+	padding: 0;
+	margin: 50px calc(50% - 15px) 40px;
+	width: 30px;
+}
+
+.title-page-subtitle{
+	color: #576671;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+
+/*about-block*/
+
+.about-block{
+	height: 100%;
+}
+
+.about-info-img{		/*иконка*/
+	width: 175px;
+	height: 175px;
+	color: #87949e;
+	background-color: #edeff1;
+	border-radius: 50%;
+	font-size: 55px;
+	text-align: center;
+
+	transition: all .2s;
+
+	margin: 0 25%;
+}
+
+.about-info-img i{
+	margin: 34% 0;
+}
+
+.about-info-img:hover{
+	background-color: #17daa3;
+	color: #fff;
+}
+
+.about-info-title{		/*заголовок*/
+	color: #000;
+	font-size: 28px;
+	font-weight: 400;
+	font-family: 'Raleway', sans-serif;
+
+	padding: 70px 0 45px 0;
+}
+
+.about-info-text{		/*текст*/
+	color: #576671;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+
+	padding: 0 20px;
+}
+
+.about-info{		/*сам блок с инфой*/
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-info-item{
+	text-align: center;
+}
+
+.learn-more--about-us-btn{		/*кнопка в блоке 'About us'*/
+	text-align: center;
+	margin: 95px 0 105px 0;
+}
+
+.learn-more--about-us-btn a{		
+	border-color: #576671;
+	color: #576671;
+}
+
+.learn-more--about-us-btn a:hover{
+	border-color: #17daa3;
+	color: #fff;	
+}
+
+
+/*main-slider*/
+
+
+.slider-block{
+	background: url('../images/images/slider_bckg.jpg') center no-repeat;
+	height: 700px;
+	position: relative;
+}
+
+
+.slider{
+    position: relative;
+    width: 880px;
+	padding: 10px 40px;
+	margin-left: 25%;
+	padding-top: 11%;
+}
+
+.arrow{
+    position: absolute;
+    top: 60%;
+	background: 0;
+	border: 0;
+    color: #444;
+	font-size: 40px;
+	cursor: pointer;
+	transition: all .2s linear;
+}
+
+.prev{
+    left: -230px;
+}
+
+.prev:hover{
+	left: -233px;
+}
+
+.next{
+    right: -230px;
+}
+
+.next:hover{
+	right: -233px;
+}
+
+.arrow:focus{
+	outline: none;
+}
+
+.gallery{
+    width: 852px;
+    overflow: hidden;
+}
+
+.images{
+    padding: 0;
+}
+
+.gallery ul {
+    width: 9999px;
+    height: 250px;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+	transition: margin-left 250ms;
+}
+
+li{
+	display: inline-block;
+	text-align: center;
+}
+
+
+.slider-photo img{
+	width: 107px;
+	height: 107px;
+}
+
+.slider-title b{
+	font-size: 30px;
+	color: #17daa3;
+	font-weight: 400;
+	font-family: 'Raleway', sans-serif;
+}
+
+.slider-title{
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+
+	padding: 40px 0 45px 0;
+}
+
+.slider-subtitle{
+	font-size: 18px;
+	opacity: .5;
+}
+
+
+/*our services*/
+
+.our-services{
+	height: 979px;
+
+	background-color: #fff;
+	color: #576671;
+}
+
+.our-services .info-row{
+	display: flex;
+	justify-content: space-between;
+}
+
+.our-services .info-row:first-child{
+	padding-bottom: 20px;
+}
+
+.our-services .info-item{
+	display: flex;
+}
+
+.our-services .info-text{
+	margin-left: 52px;	/**/
+	text-align: start;
+}
+
+
+.our-services .info-icon{		/*стилизаци я иконки*/
+	background-color: #fff;
+	border-radius: 50%;
+
+	width: 94px;
+	height: 94px;
+	text-align: center;
+
+	margin-top: 23px;
+}
+
+.our-services .info-icon i{
+	font-size: 35px;
+	color: #17daa3;
+
+	padding-top: 30%;
+}
+
+
+.our-services .info-title{		/*стилизация текста*/
+	font-size: 60px;
+	font-weight: 200;
+	font-family: 'Raleway', sans-serif;
+}
+
+.our-services .info-desc{
+	font-size: 17px;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	opacity: .7;
+	line-height: 46px;
+}
+
+
+/*pricing*/
+
+.pricing{
+	background-color: #f6f6f7;
+	height: 100%;
+	padding-bottom: 112px;
+}
+
+.pricing .pricing-inner{
+	display: flex;
+	justify-content: space-between;
+}
+
+.pricing .pricing-item{
+	width: 345px;
+	height: 585px;
+
+	background-color: #fff;
+	color: #576671;
+
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+
+	position: relative;
+}
+
+.pricing .cost{			
+	font-size: 60px;
+	font-weight: 200;
+	font-family: 'Raleway', sans-serif;
+	color: #17daa3;
+
+	margin: 0;
+}
+
+
+.pricing .cost p{		/*левый пэддинг: 30px*/	
+	margin: 60px 0 50px 38px;
+}
+
+.pricing .title{
+	margin-left: 38px;
+
+	color: #576671;
+	font-weight: 500;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	opacity: .6;
+}
+
+.pricing .hr{
+	border: 1px #f6f6f7 solid;
+	margin: 62px 0 68px 0;
+}
+
+.pricing .text{
+	margin-left: 38px;
+	margin-right: 70px;
+
+	color: #576671;
+	font-weight: 500;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	line-height: 48px;
+	opacity: .8;	
+}
+
+.pricing .btn{
+	width: 345px;
+	height: 72px;
+	display: flex;
+	justify-content: space-between;
+
+	border: 0;
+	border-radius: 0 0 5px 5px;
+	padding: 8% 36px 0 36px;
+	background:  #17daa3;
+	color: #fff;
+
+	transition: all .1s linear;
+	position: absolute;
+	top: 88%;
+}
+
+/*для анимации*/
+.pricing .pricing-inner .btn-active{
+	width: 365px;
+	height: 82px;
+	border-radius: 0 0 5px 5px;
+	left: -10px;
+	top: 86%;	
+}
+
+.pricing .btn:hover{
+	background-color: #e34545;
+}
+
+.pricing .btn:focus{
+	outline: none;
+}
+
+.pricing .btn-text{
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+.pricing i{
+	font-size: 18px;
+}
+
+
+
+/*map*/
+
+.map{
+	background: url('../images/images/map-img.jpg') no-repeat center;
+
+	color: #576671;
+
+	/*height: 760px;*/
+	max-height: 760px;
+	height: 100%;
+}
+
+.map .info{
+	max-width: 745px;
+	padding: 165px 0 137px 0;
+}
+
+.map .title{
+	font-size: 60px;
+	font-weight: 200;
+	font-family: 'Raleway', sans-serif;
+}
+
+.map .text{
+	font-size: 18px;
+	line-height: 36px;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+
+	padding: 68px 0 76px 0;
+}
+
+.map .learn-more--map{
+	align-items: start
+}
+
+.map .learn-more--map a{		
+	border-color: #576671;
+	color: #576671;
+}
+
+.map .learn-more--map a:hover{
+	border-color: #17daa3;
+	color: #fff;	
+}
+
+
+
+/*pre-footer*/
+
+.pre-footer{
+	height: 100%;
+	max-height: 755px;
+
+	background: url('../images/images/prefooter-img.jpg') center no-repeat;
+}
+
+.pre-footer .info{
+	text-align: center;
+
+	padding: 305px 0 260px 0;
+}
+.pre-footer .text{
+	font-size: 60px;
+	font-weight: 200;
+
+	color: #fff;
+
+	padding-bottom: 155px;
+}
+
+.pre-footer .text b{
+	font-weight: 800;
+}
+
+
+.pre-footer .learn-more--pre-footer a{		
+	border-color: #fff;
+	color: #fff;
+}
+
+.pre-footer .learn-more--pre-footer a:hover{
+	border-color: #17daa3;
+	color: #fff;	
+}
+
+
+/*footer*/
+
+.footer{
+	height: 100%;
+	max-height: 750px;
+	background: url('../images/images/footer-img.jpg') center no-repeat;
+}
+
+.footer .info{
+	display: flex;
+	justify-content: space-between;
+
+	padding: 70px 0 655px 0;
+
+	color: #576671;
+}
+
+.footer .logo{
+	display: flex;
+}
+
+.footer .logo-icon{
+	font-size: 25px;
+	color: #17daa3;
+	
+	transform: translateY(-20%);
+
+	padding-right: 10px;
+}
+
+.footer .logo-text{
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+}
+
+.footer .footer-nav a{
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	color:  #87949e;
+
+	padding: 0 15px;
+
+	transition: opacity .2s linear;
+}
+
+.footer .footer-nav a:hover{
+	opacity: .5;
+}
